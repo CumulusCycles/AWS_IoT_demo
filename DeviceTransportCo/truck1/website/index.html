@@ -1,0 +1,60 @@
+<!--
+ * Copyright 2015-2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License").
+ * You may not use this file except in compliance with the License.
+ * A copy of the License is located at
+ *
+ *  http://aws.amazon.com/apache2.0
+ *
+ * or in the "license" file accompanying this file. This file is distributed
+ * on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
+ * express or implied. See the License for the specific language governing
+ * permissions and limitations under the License.
+-->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Truck1 Shadow</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        html, body { font-family: "Amazon Ember", "Helvetica", "sans-serif"; margin: 0; }
+        a { color: #FF9900; }
+        h1 { font-weight: 300; }
+        .app { width: 100%; }
+        .app-header { text-align: center; }
+        .app-body { width: 400px; margin: 0 auto; text-align: center; }
+        .app-body button { background-color: #FF9900; font-size: 14px; color: white; padding: 1em; border: none; }
+        .app-body button:hover { opacity: 0.8; }
+    </style>
+</head>
+
+<body>
+    <div class="app">
+        <div class="app-header">
+            <div class="app-logo">
+                <img id="truck" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+            </div>
+            <div id=lights></div>
+        </div>
+        <div class="app-body">
+            <button id="TruckLightsEventButton">Toggle Truck1's lights</button>
+            <div id="messages">
+                <p>Attempting to connect to AWS IoT...</p>
+            </div>
+        </div>
+    </div>
+    <script src="aws-iot-sdk-browser-bundle-min.js"></script>
+    <script src="aws-configuration.js"></script>
+    <script src="index.js"></script>
+
+    <div id="preload">
+        <img src="images/truck_off.png" width="1" height="1" />
+        <img src="images/truck_on.png" width="1" height="1" />
+    </div>
+</body>
+
+</html>

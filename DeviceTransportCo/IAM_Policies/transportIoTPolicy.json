@@ -1,0 +1,30 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Effect": "Allow",
+        "Action": [
+          "greengrass:*",
+          "iot:*",
+          "iotanalytics:*",
+          "cloud9:*",
+          "lambda:*",
+          "s3:*",
+          "sns:*",
+          "iam:*",
+          "cognito-identity:*",
+          "cognito-sync:*",
+          "cognito-idp:*",
+          "logs:*",
+          "ec2:*",
+          "cloudwatch:*",
+          "kms:ListAliases",
+          "kms:DescribeKey",
+          "cloudformation:DescribeStackResources",
+          "tag:getResources"
+        ],
+        "Resource": "*"
+      }
+    ]
+  }
+  
